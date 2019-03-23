@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: Outlets
+    @IBOutlet weak var imagemBanner: UIStackView!
+    @IBOutlet var textFields: [UITextField]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.imagemBanner.layer.cornerRadius = 10
+        self.imagemBanner.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
